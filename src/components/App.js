@@ -8,7 +8,8 @@ class App extends Component {
 	constructor() {
 		super();
     this.state = {};
-    console.log(BaseAPI.getPokemon(158))
+    this.baseAPI = new BaseAPI()
+    console.log(this.baseAPI.getPokeInfo(158))
 	}
 
   render() {
